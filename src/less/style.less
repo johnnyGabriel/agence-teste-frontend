@@ -1,0 +1,317 @@
+@import "ie.less";
+@import "fallback.less";
+@import "jScrollPane.custom.less";
+
+@colorBg: #BA251C;
+@buttonBg: #DD2F1A;
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #FFF;
+	background: @colorBg;
+}
+header {
+	z-index: 10;
+	position: relative;
+	padding: 35px 50px;
+
+	.logo {
+		width: 259px;
+	}
+}
+main {
+	width: inherit;
+}
+section, div {
+	box-sizing: border-box;
+}
+input[type="submit"], button, .button {
+	position: relative;
+	padding: 5px 45px;
+	border: 0;
+	border-radius: 5px;
+	.button-shadow;
+	background: @buttonBg;
+	text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	font-size: 12px;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.button-gradient
+	}
+}
+input {
+	transition: all .6s ease-in;
+}
+a:link {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.button-gradient {
+	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.09) 30%, rgba(0, 0, 0, 0.09) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.09) 30%, rgba(0, 0, 0, 0.09) 100%);
+	background: -o-linear-gradient(90deg, rgba(255, 255, 255, 0.09) 30%, rgba(0, 0, 0, 0.09) 100%);
+	background: -ms-linear-gradient(90deg, rgba(255, 255, 255, 0.09) 30%, rgba(0, 0, 0, 0.09) 100%);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 30%, rgba(0, 0, 0, 0.09) 100%);
+}
+.button-shadow {
+	-webkit-box-shadow: -1px 3px 16px 0px rgba(0, 0, 0, 0.58);
+	-moz-box-shadow:    -1px 3px 16px 0px rgba(0, 0, 0, 0.58);
+	box-shadow:         -1px 3px 16px 0px rgba(0, 0, 0, 0.58);
+}
+.no-shadow {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.container {
+	position: relative;
+	width: 959px;
+	margin: 0 auto;
+}
+.bg-top {
+	position: absolute;
+	top: 0;
+	width: inherit;
+	height: 616px;
+	background: url('../images/bg-top.png');
+}
+.content-top {
+	z-index: 10;
+	position: relative;
+	padding: 0 70px;
+	text-align: center;
+
+	h1 {
+		width: 450px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: left;
+		text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.45);
+	}
+
+	p {
+		width: 520px;
+		margin-top: 260px;
+		text-align: left;
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+	button {
+		position: relative;
+		width: 241px;
+		height: 56px;
+		margin-top: 30px;
+		&:before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			top: 8px;
+			left: 15px;
+			width: 31px;
+			height: 37px;
+			background: url('../images/regulamento-icon.png');
+		}
+	}
+}
+.contact {
+	&:before {
+		content: "";
+	    z-index: 9;
+	    display: block;
+	    position: relative;
+	    width: 550px;
+	    height: 25px;
+	    top: 129px;
+	    left: 205px;
+	    -webkit-box-shadow: 0px 19px 18px -5px rgba(50, 50, 50, 0.69);
+	    -moz-box-shadow:    0px 19px 18px -5px rgba(50, 50, 50, 0.69);
+	    box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.53);
+	    border-radius: 50%;
+	    background: rgba(255, 255, 255, 0);
+	}
+
+	margin: 35px 0;
+
+	> div {
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 8px;
+			background: -moz-linear-gradient(top, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 35%, rgba(255,255,255,.1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,.2)), color-stop(35%, rgba(0,0,0,.1)), color-stop(100%, rgba(255,255,255,.1)));
+			background: -webkit-linear-gradient(top, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 35%, rgba(255,255,255,.1) 100%);
+			background: -o-linear-gradient(top, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 35%, rgba(255,255,255,.1) 100%);
+			background: -ms-linear-gradient(top, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 35%, rgba(255,255,255,.1) 100%);
+			background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 35%, rgba(255,255,255,.1) 100%);
+		}
+
+		z-index: 99;
+		position: relative;
+		padding: 20px 30px;
+		border-radius: 8px;
+		background: #790000;
+
+		&:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+		> span {
+			display: block;
+			width: inherit;
+			font-size: 14px;
+			font-weight: bold;
+			color: #FDBF43;
+		}
+	}
+	.tel-contact {
+		float: left;
+		width: 163px;
+		margin-right: 2em;
+		p {
+			margin: .5em 0 .1em;
+			font-size: 14px;
+			span {
+				font-size: 24px;
+				color: #FFFDFD;
+			}
+		}
+		p~p {
+			margin: 0;
+			font-size: 12px;
+			color: #CD7979;
+		}
+	}
+	.logo {
+		float: right;
+		width: 204px;
+		height: 48px;
+	}
+}
+.regulation {
+	float: left;
+	width: 50%;
+	text-align: center;
+	> div {
+		width: 442px;
+		height: 411px;
+		margin-left: 15px;
+		padding: 2em 1.5em;
+		border-radius: 8px;
+		background: #A20D04;
+		text-align: left;
+		
+		.scrollable {
+			overflow-y: scroll;
+			height: 347px;
+		}
+	}
+	h5, h6 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: normal;
+	}
+	p {
+		font-size: 12px;
+		font-weight: lighter;
+	}
+	.button {
+		display: inline-block;
+		width: 200px;
+		margin-top: 40px;
+		text-align: center;
+		font-size: 18px;
+		font-weight: normal;
+		color: #FFF;
+		.no-shadow
+	}
+}
+.contact-form {
+	float: left;
+	width: 50%;
+	> div {
+		margin: 0 60px 0 80px;
+		h4 {
+			margin: 0 0 1em;
+			font-size: 24px;
+			font-weight: normal;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		input[type="tel"],
+		select,
+		textarea {
+			box-sizing: border-box;
+			margin: 0 0 .5em;
+			padding: .4em 1em;
+			-webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.51);
+			-moz-box-shadow:    0px 0px 9px 0px rgba(0, 0, 0, 0.51);
+			box-shadow:         0px 0px 9px 0px rgba(0, 0, 0, 0.51);
+			border: 1px solid #860901;
+			border-radius: 5px;
+			background: #FFC5C5;
+			font-size: 14px;
+			color: #790000;
+		}
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+			color: #790000 !important;			
+		}
+		input::-moz-placeholder,
+		textarea::-moz-placeholder {
+			color: #790000 !important;
+		}
+		input:-ms-input-placeholder,
+		textarea:-ms-input-placeholder {
+			color: #790000 !important;
+		}
+		button {
+			float: right;
+			height: 47px;
+			margin-top: 10px;
+			&:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		}
+		textarea {
+			height: 144px;
+		}
+		.isInvalid {
+			background: #EC6464 !important;
+			color: #FFF !important;
+		}
+		.row {
+			display: table;
+			width: 100%;
+			.col-100 {
+				display: block;
+				width: 100%;
+			}
+			.col-50 {
+				float: left;
+				width: 47.5%;
+				margin-left: 5%;
+			}
+			.col-50:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

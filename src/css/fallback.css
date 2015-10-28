@@ -1,0 +1,8 @@
+.no-boxshadow input[type="submit"],
+.no-boxshadow button,
+.no-boxshadow .button {
+  border: 1px solid #D86060;
+}
+.no-button-shadow {
+  border: 1px solid #D86060;
+}

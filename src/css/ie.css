@@ -1,0 +1,6 @@
+.lte-ie9 .content-top button {
+  margin-top: 40px;
+}
+.lte-ie9 .contact:before {
+  top: 122px !important;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "agence-teste-frontend",
+  "version": "0.0.0",
+  "authors": [
+    "Johnny Gabriel <johnny_gabriel@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "html5shiv": "~3.7.3",
+    "jquery-mask-plugin": "jQuery-Mask-Plugin#~1.13.4",
+    "simple": "https://raw.githubusercontent.com/UmbraEngineering/Placeholder/master/src/simple.js",
+    "jquery": "1.11.1",
+    "jScrollPane": "~2.0.22"
+  }
+}

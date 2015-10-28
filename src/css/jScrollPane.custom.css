@@ -1,0 +1,12 @@
+.jspPane * {
+  width: 97%;
+}
+.jspVerticalBar {
+  width: 3px !important;
+}
+.jspVerticalBar .jspTrack {
+  background: #B21717;
+}
+.jspVerticalBar .jspTrack .jspDrag {
+  background: #ff0000;
+}

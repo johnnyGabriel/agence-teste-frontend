@@ -1,0 +1,13 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/css/borderradius",
+    "test/css/boxshadow",
+    "test/css/gradients",
+    "test/css/textshadow",
+    "test/forms/placeholder"
+  ]
+}
